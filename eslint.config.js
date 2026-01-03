@@ -1,0 +1,38 @@
+import js from '@eslint/js';
+import react from 'eslint-plugin-react';
+import reactHooks from 'eslint-plugin-react-hooks';
+import reactRefresh from 'eslint-plugin-react-refresh';
+
+export default [
+  js.configs.recommended,
+  {
+    files: ['**/*.{js,jsx}'],
+    languageOptions: {
+      ecmaVersion: 2020,
+      sourceType: 'module',
+      globals: {
+        window: 'readonly',
+        document: 'readonly',
+      },
+    },
+    plugins: {
+      react,
+      'react-hooks': reactHooks,
+      'react-refresh': reactRefresh,
+    },
+    settings: {
+      react: {
+        version: '19.2',
+      },
+    },
+    rules: {
+      'no-console': 'error',
+      'prefer-const': 'error',
+      'no-fallthrough': 'error',
+      'no-duplicate-imports': 'error',
+      'react/react-in-jsx-scope': 'off',
+      'react/prop-types': 'off',
+      'react-hooks/rules-of-hooks': 'error',
+    },
+  },
+];
