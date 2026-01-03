@@ -1,4 +1,5 @@
 function App() {
+  console.log('first');
   return;
 }
 
