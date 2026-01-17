@@ -63,7 +63,7 @@ Each top-level folder has **its own README** explaining rules and responsibiliti
 
 ---
 
-## Installation (WIP)
+## Installation
 
 > CLI installation instructions.
 
